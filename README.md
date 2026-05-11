@@ -7,7 +7,7 @@ A multi-user web platform built for CSIT314 (Software Development Methodologies)
 ## Screenshots
 
 ### Login
-> Clean credential form. Role is resolved server-side on login — no client-side role exposure.
+> Clean credential form. Role is resolved server-side on login - no client-side role exposure.
 <p align="center"> 
    <img width="300" alt="login" src="https://github.com/user-attachments/assets/8c4a8288-0410-4dcc-92c4-e6bf50feb96b" />
 </p>
@@ -43,18 +43,18 @@ The project strictly separates concerns across three layers:
 | **Boundary** | `src/boundaries/` | Render HTML forms and menus; forward user input to controllers |
 | **Controller** | `src/controllers/` | Validate input server-side; orchestrate entity operations |
 | **Entity** | `src/entities/` | Data models; all direct DB queries live here |
-| **Config** | `src/config/` | Single `DBConnection.php` — one place to manage credentials |
+| **Config** | `src/config/` | Single `DBConnection.php` - one place to manage credentials |
 
 ---
 
 ## Features
 
-- **RBAC** — Admin and Volunteer roles with separate menus and access paths
-- **User profile lifecycle** — Create, search, view, update, and suspend profiles
-- **Server-side validation** — All input validated in the controller layer before any DB interaction
-- **Suspend workflow** — Confirmation pop-up before suspending an account or profile; no accidental state change
-- **CI/CD pipeline** — GitHub Actions runs PHPUnit on every push to `main`; deployment guide printed on success
-- **UML documentation** — Use Case, Sequence, Class, and ER diagrams included
+- **RBAC** - Admin and Volunteer roles with separate menus and access paths
+- **User profile lifecycle** - Create, search, view, update, and suspend profiles
+- **Server-side validation** - All input validated in the controller layer before any DB interaction
+- **Suspend workflow** - Confirmation pop-up before suspending an account or profile; no accidental state change
+- **CI/CD pipeline** - GitHub Actions runs PHPUnit on every push to `main`; deployment guide printed on success
+- **UML documentation** - Use Case, Sequence, Class, and ER diagrams included
 
 ---
 
@@ -147,7 +147,7 @@ Defined in `.github/workflows/ci-cd.yml`.
 | Push to `main` | Install Composer deps → Run PHPUnit → Print deployment steps |
 | Pull request to `main` | Same as above (gate before merge) |
 
-On success, the pipeline prints a step-by-step guide to pull and refresh your local XAMPP instance. No automated remote deployment — intentional for a local dev environment.
+On success, the pipeline prints a step-by-step guide to pull and refresh your local XAMPP instance. No automated remote deployment - intentional for a local dev environment.
 
 ---
 
@@ -155,10 +155,10 @@ On success, the pipeline prints a step-by-step guide to pull and refresh your lo
 
 Full UML documentation is in `docs/uml/`:
 
-- `use_case.png` — Actor interactions for Admin and Volunteer roles
-- `sequence_login.png` — Login flow across Boundary → Controller → Entity layers
-- `class_diagram.png` — BCE class relationships
-- `er_diagram.png` — Database entity-relationship model
+- `use_case.png` - Actor interactions for Admin and Volunteer roles
+- `sequence_login.png` - Login flow across Boundary → Controller → Entity layers
+- `class_diagram.png` - BCE class relationships
+- `er_diagram.png` - Database entity-relationship model
 
 ---
 
@@ -177,7 +177,7 @@ Full UML documentation is in `docs/uml/`:
 
 | | |
 |---|---|
-| Subject | CSIT314 — Software Development Methodologies |
+| Subject | CSIT314 - Software Development Methodologies |
 | University | University of Wollongong (Australia) via SIM, Singapore |
 | Team | CtrlSourGrades |
 | Period | Oct – Nov 2025 |
@@ -186,4 +186,4 @@ Full UML documentation is in `docs/uml/`:
 
 ## License
 
-Academic project — not licensed for commercial use.
+Academic project - not licensed for commercial use.
